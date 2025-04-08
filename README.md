@@ -1,5 +1,5 @@
 
-# 🧾 Validación de Documentos Oficiales con OCR (INE, Factura, Tarjeta de Circulación)
+# 🧾 Validación de Documentos con OCR
 
 Este proyecto utiliza **Python + OCR (Tesseract)** para extraer y validar datos clave de documentos oficiales escaneados, como:
 
@@ -96,4 +96,3 @@ Proyecto desarrollado por **Andrea Quiroz**, **Alan Mota**, **Daniela Pamelin**,
 ---
 
 > ✨ Este proyecto es un excelente ejemplo de cómo combinar procesamiento de imágenes y extracción de texto automatizada para validación documental segura.
-```
