@@ -3,7 +3,7 @@ import pytesseract
 import re
 
 
-pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\'
 
 def preprocesar_imagen(ruta_imagen):
     imagen = cv2.imread(ruta_imagen)
@@ -56,5 +56,5 @@ def main(ruta_imagen):
         print(f"{campo}: {valor}")
 
 if __name__ == "__main__":
-    ruta_imagen = 'ruta_a_tu_imagen_ine.jpg'
+    ruta_imagen = 'C:\Users\Daniela Pamelin\Downloads\ValidacionDocumentos\Entregables\Caso 1\TK 62853-2.pdf'
     main(ruta_imagen)
