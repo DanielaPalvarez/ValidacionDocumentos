@@ -2,7 +2,9 @@ from pdf2image import convert_from_path
 from PIL import Image, ImageOps
 import pytesseract
 import re
+import numpy as np
 
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 def convertir_pdf_a_imagenes(ruta_pdf):
     """
     Convierte todas las páginas del PDF a imágenes.
@@ -15,7 +17,6 @@ def preprocesar_imagen(imagen):
     imagen = ImageOps.autocontrast(imagen)
     imagen = imagen.point(lambda x: 0 if x < 160 else 255, '1')
     return imagen
-
 def extraer_texto_ine(imagenes):
     """
     Extrae texto OCR de cada imagen de INE.
@@ -73,7 +74,7 @@ def procesar_ine(ruta_pdf):
 
 # Ejecución directa
 if __name__ == "__main__":
-    ruta = "ine.pdf"  # Cambia esto al nombre real de tu PDF
+    ruta = "ine.pdf"  
     resultado = procesar_ine(ruta)
 
     print("\n--- DATOS EXTRAÍDOS DEL INE ---")

@@ -92,7 +92,3 @@ Cada script imprimirá el texto detectado por OCR y los campos extraídos.
 ## 👩‍💻 Autores
 
 Proyecto desarrollado por **Andrea Quiroz**, **Alan Mota**, **Daniela Pamelin**, **Diego Soria**, **Rubi Royval** 
-
----
-
-> ✨ Este proyecto es un excelente ejemplo de cómo combinar procesamiento de imágenes y extracción de texto automatizada para validación documental segura.
